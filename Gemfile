@@ -45,6 +45,7 @@ group :development do
   gem 'spring'
 end
 
+gem 'administrate', "~> 0.1.3"
 
 # Bootstrap & Bootswatch & font-awesome
 gem 'bootstrap-sass'
