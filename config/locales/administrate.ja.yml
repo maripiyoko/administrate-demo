@@ -1,0 +1,23 @@
+---
+ja:
+  administrate:
+    actions:
+      confirm: "本当によろしいですか？"
+      destroy: "削除"
+      edit: "編集"
+      show: "閲覧"
+    controller:
+      create:
+        success: "%{resource} を作成しました。"
+      destroy:
+        success: "%{resource} を削除しました。"
+      update:
+        success: "%{resource} を更新しました。"
+    fields:
+      has_many:
+        more: "%{total_count} 中 %{count} を表示しています。"
+        none: "ありません"
+      polymorphic:
+        not_supported: "ポリモーフィック関連はサポートされていません。"
+      has_one:
+        not_supported: "HasOne関連はサポートされていません。"
