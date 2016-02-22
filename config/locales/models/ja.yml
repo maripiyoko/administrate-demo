@@ -1,0 +1,31 @@
+ja:
+  activerecord: &activerecord
+    models:
+      user: "ユーザー"
+      customer: "顧客"
+      product: "製品"
+      order: "注文"
+      line_item: "注文詳細"
+    attributes:
+      user:
+        name: "名前"
+        email: "Eメール"
+        encrypted_password: "暗号化パスワード"
+        reset_password_token: "パスワードリセットトークン"
+        reset_password_sent_at: "パスワードリセット送信日"
+        sign_in_count: "サインイン数"
+        current_sign_in_at:
+        last_sign_in_at: "最終サインイン日時"
+      customer:
+        name: "名前"
+        email: "Eメール"
+      product:
+        name: "製品名"
+        price: "価格"
+        description: "説明"
+        image_url: "画像URL"
+      line_item:
+        order: "注文"
+        product: "製品"
+        unit_price: "単価"
+        quantity: "数量"
