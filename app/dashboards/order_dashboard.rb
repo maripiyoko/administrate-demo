@@ -11,6 +11,7 @@ class OrderDashboard < Administrate::BaseDashboard
     customer: Field::BelongsTo,
     id: Field::Number,
     address: Field::Text,
+    line_items: Field::HasMany,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }
@@ -43,6 +44,7 @@ class OrderDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :customer,
     :address,
+    :line_items,
   ]
 
   # Overwrite this method to customize how orders are displayed
