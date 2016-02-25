@@ -10,9 +10,9 @@ class UserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     email: Field::String,
-    encrypted_password: Field::String,
-    reset_password_token: Field::String,
-    reset_password_sent_at: Field::DateTime,
+    encrypted_password: PasswordField,
+    reset_password_token: PasswordField,
+    reset_password_sent_at: PasswordField,
     remember_created_at: Field::DateTime,
     sign_in_count: Field::Number,
     current_sign_in_at: Field::DateTime,
