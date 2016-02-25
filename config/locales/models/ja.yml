@@ -22,6 +22,7 @@ ja:
       product:
         name: "製品名"
         price: "価格"
+        category_list: "カテゴリ"
         description: "説明"
         image_url: "画像URL"
       line_item:

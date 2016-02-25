@@ -15,6 +15,7 @@ class ProductDashboard < Administrate::BaseDashboard
     image_url: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    category_list: Field::String,
   }
 
   # COLLECTION_ATTRIBUTES
@@ -26,6 +27,7 @@ class ProductDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :price,
+    :category_list,
     :description,
   ]
 
@@ -35,6 +37,7 @@ class ProductDashboard < Administrate::BaseDashboard
     :id,
     :name,
     :price,
+    :category_list,
     :description,
     :image_url,
     :created_at,
@@ -47,6 +50,7 @@ class ProductDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :name,
     :price,
+    :category_list,
     :description,
     :image_url,
   ]
