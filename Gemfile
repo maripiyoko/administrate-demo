@@ -46,6 +46,7 @@ group :development do
 end
 
 gem 'administrate', "~> 0.1.3"
+gem 'paperclip'
 
 # Bootstrap & Bootswatch & font-awesome
 gem 'bootstrap-sass'
