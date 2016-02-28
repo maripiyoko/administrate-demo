@@ -12,7 +12,7 @@ class ProductDashboard < Administrate::BaseDashboard
     name: Field::String,
     price: Field::Number.with_options(decimals: 2),
     description: Field::Text,
-    image_url: Field::String,
+    image_url: Field::Image,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     category_list: Field::String,
@@ -28,7 +28,7 @@ class ProductDashboard < Administrate::BaseDashboard
     :name,
     :price,
     :category_list,
-    :description,
+    :image_url,
   ]
 
   # SHOW_PAGE_ATTRIBUTES
