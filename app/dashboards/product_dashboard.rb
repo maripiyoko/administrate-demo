@@ -12,7 +12,11 @@ class ProductDashboard < Administrate::BaseDashboard
     name: Field::String,
     price: Field::Number.with_options(decimals: 2),
     description: Field::Text,
-    image_url: Field::Image,
+    #image_file_name: Field::String,
+    #image_content_type: Field::String,
+    #image_file_size: Field::Number,
+    #image_updated_at: Field::DateTime,
+    image: PaperclipField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     category_list: Field::String,
@@ -28,7 +32,7 @@ class ProductDashboard < Administrate::BaseDashboard
     :name,
     :price,
     :category_list,
-    :image_url,
+    :image,
   ]
 
   # SHOW_PAGE_ATTRIBUTES
@@ -39,7 +43,7 @@ class ProductDashboard < Administrate::BaseDashboard
     :price,
     :category_list,
     :description,
-    :image_url,
+    :image,
     :created_at,
     :updated_at,
   ]
@@ -52,7 +56,7 @@ class ProductDashboard < Administrate::BaseDashboard
     :price,
     :category_list,
     :description,
-    :image_url,
+    :image,
   ]
 
   # Overwrite this method to customize how products are displayed
